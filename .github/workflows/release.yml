@@ -13,6 +13,7 @@ jobs:
           token: ${{ secrets.THUNDERSTORE_TOKEN }}
           community: "lethal-company"
           namespace: Renaud11232
+          repo: thunderstore.io
           name: "Belirium_LC_Core"
           description: "Core ModPack for the Belirium Studio"
           version: ${{ github.ref_name }}
