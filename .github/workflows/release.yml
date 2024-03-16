@@ -1,0 +1,28 @@
+name: Release
+on:
+  release:
+    types:
+      - published
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: GreenTF/upload-thunderstore-package@v4.2
+        with:
+          token: ${{ secrets.THUNDERSTORE_TOKEN }}
+          community: "lethal-company"
+          namespace: Renaud11232
+          name: "Belirium_LC_Core"
+          description: "Core ModPack for the Belirium Studio"
+          version: ${{ github.ref_name }}
+          website: https://github.com/Renaud11232/Belirium_LC_Core
+          categories: |
+            modpacks
+          deps: |
+            notnotnotswipez-MoreCompany@1.8.1
+            anormaltwig-LateCompany@1.0.11
+            kuba6000-LC_Masked_Fix@0.0.2
+            Drakorle-MoreItems@1.0.2
+            Nebulaetrix-ScanFix@1.0.3
+            
