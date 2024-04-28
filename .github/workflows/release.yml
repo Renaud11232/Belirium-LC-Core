@@ -21,9 +21,8 @@ jobs:
           categories: |
             modpacks
           deps: |
-            notnotnotswipez-MoreCompany@1.8.1
-            anormaltwig-LateCompany@1.0.11
-            kuba6000-LC_Masked_Fix@0.0.2
+            notnotnotswipez-MoreCompany@1.9.1
+            anormaltwig-LateCompany@1.0.13
             Drakorle-MoreItems@1.0.2
             Nebulaetrix-ScanFix@1.0.3
             
